@@ -1,0 +1,42 @@
+
+
+
+#hero-secition{
+    border: 1px yellow solid;
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    padding: 30px;
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(173, 48, 48, 0.9) 100%),
+    url("./Images/istockphoto-1438969575-612x612.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+/* drop-down menu*/
+.dropdown-menu{
+    width: 50px;
+    height: 50px;
+    background-image: url("./Images/burger-menu.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+#my-job{
+    text-align: center;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top:35% ;
+}
+
+#greeting{
+    width: 90%;
+    text-align: center;
+    height: auto;
+    margin: auto;
+}
