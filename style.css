@@ -1,9 +1,7 @@
 
-
-
 #hero-secition{
-    border: 1px yellow solid;
-    width: 90%;
+    border: 2px orangered solid;
+    width: 80%;
     margin: auto;
     height: 100vh;
     padding: 30px;
@@ -39,4 +37,18 @@
     text-align: center;
     height: auto;
     margin: auto;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, white, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+#about-me{
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+    height: 90vh;
+    border: 2px blue solid;
 }
