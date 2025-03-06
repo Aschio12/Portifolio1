@@ -26,18 +26,34 @@
 
 #my-job{
     text-align: center;
-    width: 50%;
+    width: 70%;
     height: auto;
     margin: auto;
-    margin-top:35% ;
+    margin-top: 20%;
+
 }
 
+
+/*fonts*/
+h1{
+    font-size: 56px;
+    color: white;
+}
+p{
+    font-size: 24px;
+    text-align: center;
+}
+h3{
+    font-size: 52px;
+    color: white;
+}
 #greeting{
     width: 90%;
     text-align: center;
     height: auto;
     margin: auto;
 }
+
 
 .gradient-text {
     background: linear-gradient(to right, white, purple);
@@ -46,9 +62,36 @@
     color: transparent;
 }
 #about-me{
+    background-image: url("./Images/cc9AZdcehy4GdzaP-generated_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 30px;
     width: 80%;
     margin: auto;
-    height: 90vh;
+    height: fit-content;
     border: 2px blue solid;
+}
+
+#studies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content:space-between;
+}
+
+.studies-detail{
+    border: 1px black solid;
+    width: 45%;
+    height: fit-content;
+    padding: 5px;
+    align-items: center;
+}
+
+.studies-detail h3{
+    align-items: center;
+    text-align: center;
+
+
 }
