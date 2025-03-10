@@ -95,3 +95,60 @@ h3{
 
 
 }
+
+#project-highlight {
+    width: 80%;
+    height: auto;
+    border: 1px black solid;
+    margin: auto;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    position: relative; 
+    padding-right: 10px;
+    padding-left:50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+#project-highlight #description-container {
+    width: 50%; 
+    height: fit-content;
+    border: 1px black solid;
+    text-align: center;
+}
+
+
+#description-container button{
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    font-size: 30px;
+    margin: 10px;
+}
+#project-highlight #project-image {
+    width: 50%; 
+    height: 70vh;
+    border: 1px black solid;
+}
+
+#project-highlight #left-btn,
+#project-highlight #right-btn {
+    width: 70px; 
+    height: 70px; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute; 
+}
+
+#project-highlight #left-btn {
+    background-image: url("./Images/back.png");
+    left: 0; 
+}
+
+#project-highlight #right-btn {
+    background-image: url("./Images/right-arrow.png");
+    right: 0; 
+}
