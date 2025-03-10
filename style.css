@@ -119,11 +119,14 @@ h3{
 }
 
 
-#description-container button{
+#description-container a{
+    text-decoration: none;
     width: 50%;
+    display: inline-block;
+    border: 1px black solid;
     height: auto;
     padding: 10px;
-    font-size: 30px;
+    font-size: 40px;
     margin: 10px;
 }
 #project-highlight #project-image {
