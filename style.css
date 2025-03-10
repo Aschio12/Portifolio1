@@ -99,59 +99,95 @@ h3{
 #project-highlight {
     width: 80%;
     height: auto;
-    border: 1px black solid;
+    border: 1px solid black;
     margin: auto;
     display: flex;
-    align-items: center; /* Center items vertically */
-    position: relative; 
-    padding-right: 10px;
-    padding-left:50px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    align-items: center;
+    position: relative;
+    padding: 10px 30px 10px 32px; /* Simplified padding */
     gap: 10px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Prevents overflow issues */
 }
 
 #project-highlight #description-container {
-    width: 50%; 
+    width: 50%;
     height: fit-content;
-    border: 1px black solid;
+    border: 1px solid black;
     text-align: center;
+    transition: all 0.5s ease; /* Smooth transition for all changes */
+    background-color: #fff; /* White background */
+    border-radius: 5px; /* Rounded corners */
 }
 
+#description-container #description {
+    font-size: 18px; /* Readable size */
+    color: #333; /* Dark text */
+    opacity: 0; /* Start hidden for fade effect */
+    animation: fadeIn 0.5s ease forwards; /* Fade-in animation */
+}
 
-#description-container a{
+#description-container a {
     text-decoration: none;
     width: 50%;
     display: inline-block;
-    border: 1px black solid;
+    border: 1px solid black;
     height: auto;
     padding: 10px;
     font-size: 40px;
     margin: 10px;
+    color: #007bff; /* Attractive link color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
 }
+
+#description-container a:hover {
+    color: #0056b3; /* Darker on hover */
+    transform: scale(1.05); /* Slight scale up */
+}
+
 #project-highlight #project-image {
-    width: 50%; 
+    width: 50%;
     height: 70vh;
-    border: 1px black solid;
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease; /* Smooth image transition */
+    border-radius: 5px; /* Rounded corners */
 }
 
 #project-highlight #left-btn,
 #project-highlight #right-btn {
-    width: 70px; 
-    height: 70px; 
+    width: 70px;
+    height: 70px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
-    position: absolute; 
+    position: absolute;
+    cursor: pointer; /* Hand cursor on hover */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth button effects */
+    opacity: 0.7; /* Subtle opacity */
+}
+
+#project-highlight #left-btn:hover,
+#project-highlight #right-btn:hover {
+    transform: scale(1.1); /* Grow on hover */
+    opacity: 1; /* Full opacity on hover */
 }
 
 #project-highlight #left-btn {
     background-image: url("./Images/back.png");
-    left: 0; 
+    left: 0;
 }
 
 #project-highlight #right-btn {
     background-image: url("./Images/right-arrow.png");
-    right: 0; 
+    right: 0;
+}
+
+/* Animation for description fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
