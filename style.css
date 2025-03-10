@@ -38,6 +38,7 @@
 h1{
     font-size: 56px;
     color: white;
+    text-align: center;
 }
 p{
     font-size: 24px;
@@ -46,6 +47,10 @@ p{
 h3{
     font-size: 52px;
     color: white;
+}
+h2{
+    font-size: 44px;
+    text-align: center;
 }
 #greeting{
     width: 90%;
@@ -191,3 +196,32 @@ h3{
     from { opacity: 0; }
     to { opacity: 1; }
 }
+#skills {
+    width: 85%;
+    margin: auto;
+    height: 100vh;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+#studing-image {
+    width: 55%;
+    height: auto;
+    border: 1px black solid;
+    background-image: url("./Images/cc9AZdcehy4GdzaP-generated_image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#skil-description {
+    width: calc(40% - 0px); /* Adjusted width to leave 10px */
+    height: auto;
+    border: 1px black solid;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
