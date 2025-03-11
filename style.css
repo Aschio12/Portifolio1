@@ -293,4 +293,12 @@ h2{
     display: inline;
     padding-left: 20px;
 }
+.footer{
+    width: 80%;
+    padding: 30px;
+    margin: auto;
+    border: 1px black solid;
+    color: wheat;
+    background-color: #333;
+}
 
