@@ -24,6 +24,23 @@
     float: right;
 }
 
+.dropdown{
+    margin-top: 10px;
+    margin-left: 100vw;
+    float: right;
+    width: 10%;
+    height: auto;
+    padding: 20px;
+    border: 3px white solid;
+}
+
+.dropdown a{
+    text-decoration: none;
+    width: 100%;
+    font-size: 32px;
+    padding: 10px;
+}
+
 #my-job{
     text-align: center;
     width: 70%;
