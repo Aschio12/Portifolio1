@@ -1,4 +1,3 @@
-// No imports needed since we're not using a bundler
 $(document).ready(function () {
     let currentIndex = 0;
     const projects = [
