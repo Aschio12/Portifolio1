@@ -75,17 +75,29 @@
         </div>
       </div>
       <div id="get-in-touch">
+        <div id="form-container">
+          <h2>Get in Touch</h2>
+          <p>Reach out with any questions or inquiries.</p>
         <form action="https://formspree.io/f/mzzebvjj" method="POST" id="get-in-touch-form">
           <label>
-            Your email:
-            <input type="email" name="email" />
+           Email:
+            <input type="email" name="email" /><br>
           </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
+          <label id="message-label">
+            message:
+            <textarea name="message"></textarea><br>
           </label>
           <button type="submit">Send</button>
         </form>
+        <div id="status" class="status"></div> <!-- Area for success/error message -->
+      </div>
+      <div id="contact-through">
+        <h3>Let’s Collaborate and workd together</h3>
+        <label for="email">Email</label>
+        <p id="email">aschalewdere2@gmail.com</p>
+        <label for="phone">Contact</label>
+        <p id="phone">09-79-80-80-15</p>
+      </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

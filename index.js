@@ -36,6 +36,7 @@ $(document).ready(function () {
         } else {
             currentIndex = projects.length - 1;
         }
+        
         updateDisplay();
     });
 });

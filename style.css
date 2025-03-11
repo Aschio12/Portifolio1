@@ -37,7 +37,6 @@
 /*fonts*/
 h1{
     font-size: 56px;
-    color: white;
     text-align: center;
 }
 p{
@@ -45,11 +44,12 @@ p{
     text-align: center;
 }
 h3{
-    font-size: 52px;
-    color: white;
+    font-size:34px;
+    text-align: center;
+
 }
 h2{
-    font-size: 44px;
+    font-size: 52px;
     text-align: center;
 }
 #greeting{
@@ -219,9 +219,78 @@ h2{
 }
 
 #skil-description {
-    width: calc(40% - 0px); /* Adjusted width to leave 10px */
+    width: calc(40% - 0px); 
     height: auto;
     border: 1px black solid;
-    box-sizing: border-box; /* Ensure padding and border are included in width */
+    box-sizing: border-box; 
+}
+
+#get-in-touch{
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    padding: 30px;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#get-in-touch h2{
+    margin-bottom: 20px;
+}
+
+#get-in-touch p{
+    margin-bottom: 30px;
+}
+#get-in-touch label{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+#get-in-touch button{
+    width: 30%;
+    height: auto;
+    padding: 5px;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-left: 163px;
+}
+#get-in-touch input{
+    width: 50%;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
+#get-in-touch textarea {
+    width: 50%;
+    min-height: 90px;
+    padding: 5px;
+    font-size: 24px;
+    float: right;
+    margin-right: 125px;
+}
+#form-container{
+    width: 60%;
+    height: auto;
+    border: 1px black solid;
+}
+
+
+
+#contact-through{
+    padding-top: 20px;
+    width:40%;
+    border: 1px black solid;
+    height: auto;
+}
+#message-label{
+    margin-top: 10px;
+}
+#contact-through label{
+    font-size: 32px;
+
+}
+#contact-through p{
+    display: inline;
+    padding-left: 20px;
 }
 
