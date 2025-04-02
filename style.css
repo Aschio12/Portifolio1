@@ -1,3 +1,20 @@
+#first-impresssion{
+    width:80%;
+    padding: 30px;
+    border: 1px black solid;
+    margin: auto;
+    height: 90vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#first-impresssion h1{
+    display: inline-block;
+    width: 70%;
+    
+
+}
 
 #hero-secition{
     border: 2px orangered solid;
@@ -13,32 +30,11 @@
     background-repeat: no-repeat;
 
 }
-/* drop-down menu*/
-.dropdown-menu{
-    width: 50px;
-    height: 50px;
-    background-image: url("./Images/burger-menu.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    float: right;
-}
 
-.dropdown{
-    margin-top: 10px;
-    margin-left: 100vw;
-    float: right;
-    width: 10%;
-    height: auto;
-    padding: 20px;
-    border: 3px white solid;
-}
 
-.dropdown a{
-    text-decoration: none;
-    width: 100%;
-    font-size: 32px;
-    padding: 10px;
+img{
+    width: 100px;
+    height: 100px;
 }
 
 #my-job{
