@@ -1,9 +1,12 @@
+#main-container{
+    margin: 0px;
+}
 #first-impresssion{
     width:80%;
     padding: 30px;
     border: 1px black solid;
     margin: auto;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -30,21 +33,66 @@
     background-repeat: no-repeat;
 
 }
+button {
+    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+    border: none;
+    cursor: pointer;
+}
 
+.dropdown-menu {
+    position: fixed;  /* Keeps it visible while scrolling */
+    top: 40px;  /* Adjust as needed */
+    right: 60px;  
+    width: auto;
+    height: auto;
+    padding: 5px;
+    z-index: 1000;  /* Ensure it's above other content */
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: black;  /* Ensure visibility */
+    padding: 10px;
+    gap: 7px;
+    text-align: center;
+    border-radius: 5px;
+    min-width: 120px;
+}
+
+.dropdown-menu a {
+    width: 100px;
+    text-decoration: none;
+    height: auto;
+    display: block;
+    color: white;
+    font-size: 20px; /* Reduced size for better fit */
+    padding: 5px;
+    transition: color 0.2s ease-in 0.1s;
+}
+
+/* Hover effects */
+.dropdown-menu a:hover {
+    transform: scale(1.1);
+    color: antiquewhite;
+}
+
+/* Fix: Ensure dropdown appears on hover */
+.dropdown-menu:hover .dropdown {
+    display: block;
+}
 
 img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
-#my-job{
-    text-align: center;
-    width: 70%;
-    height: auto;
-    margin: auto;
-    margin-top: 20%;
 
-}
 
 
 /*fonts*/
@@ -53,7 +101,7 @@ h1{
     text-align: center;
 }
 p{
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
 }
 h3{
@@ -70,6 +118,8 @@ h2{
     text-align: center;
     height: auto;
     margin: auto;
+    margin-top: 40%;
+   
 }
 
 
@@ -99,20 +149,8 @@ h2{
     justify-content:space-between;
 }
 
-.studies-detail{
-    border: 1px black solid;
-    width: 45%;
-    height: fit-content;
-    padding: 5px;
-    align-items: center;
-}
-
-.studies-detail h3{
-    align-items: center;
-    text-align: center;
 
 
-}
 
 #project-highlight {
     width: 80%;
