@@ -49,20 +49,24 @@
 
 }
 #cv{
-    padding: 10px;
+    padding: 20px;
+    margin-top:70px;
+    margin-bottom: 40px;
     width: fit-content;
     height: fit-content;
     border: 1px white solid;
 }
 
 #get-me{
+    padding-left: 0px;
+    width: fit-content;
     border: 1px black solid;
     width: fit-content;
     height: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px;
 }
 #get-me a{
     text-decoration: none;
@@ -169,23 +173,19 @@ h2{
     color: transparent;
 }
 #about-me{
-    background-image: url("./Images/cc9AZdcehy4GdzaP-generated_image.jpg");
-    background-repeat: no-repeat;
+    background-image: url(Images/istockphoto-1438969575-612x612.jpg);
     background-size: cover;
-    background-position: center;
-    padding: 30px;
+    background-repeat: no-repeat;
     width: 80%;
+    height: auto;
     margin: auto;
-    height: fit-content;
-    border: 2px blue solid;
-}
+    padding:30px;
 
-#studies{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content:space-between;
+}
+#about-me button{
+    display: block;
+    width: 40%;
+    margin: auto;
 }
 
 
@@ -286,33 +286,42 @@ h2{
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+
 #skills {
-    width: 85%;
-    margin: auto;
-    height: 100vh;
-    border: 1px black solid;
     display: flex;
-    flex-direction: row;
+    overflow: hidden;
     flex-wrap: wrap;
-    gap: 20px;
+    width: 80%; /* Full width of the container */
+    height: 80vh; /* Adjust as needed */
+    margin: auto;
+    padding: 30px;
+    gap: 40px;
+    border: 1px black solid;
 
 }
 
-#studing-image {
-    width: 55%;
-    height: auto;
-    border: 1px black solid;
-    background-image: url("./Images/cc9AZdcehy4GdzaP-generated_image.jpg");
-    background-position: center;
-    background-size: cover;
+#skills div {
+    width: 200px; /* Set width of each div */
+    height: 200px; /* Set height of each div */
+    background-size: cover; /* Ensure the background image covers the div */
     background-repeat: no-repeat;
+    animation: slide 20s linear infinite; /* Animation for sliding */
 }
 
-#skil-description {
-    width: calc(40% - 0px); 
-    height: auto;
-    border: 1px black solid;
-    box-sizing: border-box; 
+
+.img1 { background-image: url('Images/linkedin.svg'); }
+.img2 { background-image: url('Images/linkedin.svg'); }
+.img3 { background-image: url('Images/linkedin.svg'); }
+.img4 { background-image: url('Images/linkedin.svg'); }
+.img5 { background-image: url('Images/linkedin.svg'); }
+.img6 { background-image: url('Images/linkedin.svg'); }
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); } /* Move left */
+    50% { transform: translateX(100%); } /* Move right */
+    100% { transform: translateX(0); } /* Return to start */
 }
 
 #get-in-touch{
