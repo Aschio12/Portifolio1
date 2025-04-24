@@ -1,8 +1,8 @@
 $(document).ready(function () {
     let currentIndex = 0;
     const projects = [
-        { address: "./Images/burger-menu.png", description: "This is the description of project 1" },
-        { address: "./Images/lines.png", description: "This is the description of project 2" },
+        { address: "./Images/p1.jpg", description: "This is the description of project 1" },
+        { address: "./Images/python.png", description: "This is the description of project 2" },
     ];
 
     const leftBtn = $("#left-btn");

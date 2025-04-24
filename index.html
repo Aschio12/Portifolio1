@@ -9,22 +9,21 @@
   <body>
     <div id="main-container">
       <div id="first-impresssion">
-        <h1>
-          Creative Web Developer And Visionary UI/UX Designer, Dedicated to
-        </h1>
+        <h1 class="gradient-text">Creative Web Developer And Visionary UI/UX Designer</h1>
       </div>
       <div id="hero-secition">
         <div id="logo">logooo</div>
-        <span id="logo-name"><p>Aschalew</p></span>
+        <span id="logo-name"><p class="gradient-text">Aschalew</p></span>
         <div class="dropdown-menu">
           <button>
             <img src="Images/burger-menu.png" alt="drop downn button" />
           </button>
           <div class="dropdown">
-            <a href="">home</a>
-            <a href="">home</a>
-            <a href="">home</a>
-            <a href="">home</a>
+            <a class="gradient-text" href="">Home</a>
+            <a class="gradient-text" href="">About me</a>
+            <a class="gradient-text" href="">Skills</a>
+            <a class="gradient-text" href="">Projects</a>
+            <a class="gradient-text" href="">Contact me</a>
           </div>
         </div>
         <div id="greeting">
@@ -32,10 +31,17 @@
             Hi there.....✋, I'm Aschalew! Front-End Web Developer and UI/UX
             Designer!
           </h1>
-          <div id="cv">Download Cv</div>
+          <a 
+          class="text"
+            id="cv"
+            href="/files/Aschalew-Dereje-Resume.pdf"
+            download="Aschalew_cv.pdf"
+          >
+            DOWNLOAD CV
+          </a>
           <div id="get-me">
             <a href=""
-              ><div><img src="Images/github.svg" alt="github" /></div
+              ><div><img src="Images/github.png" alt="github"  /></div
             ></a>
             <a href=""
               ><div><img src="Images/linkedin.svg" alt="linkedin" /></div
@@ -44,14 +50,14 @@
               ><div><img src="Images/leetcode.svg" alt="leetcode" /></div
             ></a>
             <a href=""
-              ><div><img src="Images/code-forces.svg" alt="codeforce" /></div
+              ><div id="cf"><img src="Images/code-forces.svg" alt="codeforce" /><p class="gradient-text"></div
             ></a>
           </div>
         </div>
       </div>
       <div id="about-me">
-        <h3>ABOUT ME</h3>
-        <p class="gradient-text">
+        <h3 class="gradient-text">ABOUT ME</h3>
+        <p class="text" >
           Hello! I’m a 21-year-old software engineering student at Adam Science
           and Technology University. I specialize in front-end web development
           and UI/UX design, and I also excel in competitive programming,
@@ -60,62 +66,91 @@
           sharpen my skills and problem-solving abilities. I’m excited to share
           my journey and showcase my work through this portfolio!
         </p>
-
-        <button class="gradient-text"><b>more color change</b></button>
+        <button class="gradient-text"><b>MORE</b></button>
       </div>
       <div id="project-highlight">
         <button id="left-btn"></button>
         <div id="description-container">
-          <p id="description"></p>
-          <a id="For detail" href="#">For detail</a>
+          <p id="description" class="text"></p>
+          <a id="For detail" href="#" class="gradient-text">For detail</a>
         </div>
         <div id="project-image"></div>
         <button id="right-btn"></button>
       </div>
       <div id="skills">
-        <div class="img1"></div>
-        <div class="img2"></div>
-        <div class="img3"></div>
-        <div class="img4"></div>
-        <div class="img5"></div>
-        <div class="img6"></div>
-    </div>
+        <h2 class="gradient-text">Skills</h2>
+        <div class="outer">
+          <div class="img1"></div>
+          <p class="text">JAVA SCRIPT</p>
+          <progress class="percentage" value="90" max="100">90%</progress>
+        </div>
+        <div class="outer">
+          <div class="img2"></div>
+          <p class="text">REACT</p>
+          <progress class="percentage" value="90" max="100">90%</progress>
+        </div>
+        <div class="outer">
+          <div class="img3"></div>
+          <p class="text">PYTHON</p>
+          <progress class="percentage" value="90" max="100">90%</progress>
+        </div>
+        <div class="outer">
+          <div class="img4"></div>
+          <p class="text">TAILWIND</p>
+          <progress class="percentage" value="90" max="100">90%</progress>
+        </div>
+        <div class="outer">
+          <div class="img5"></div>
+          <p class="text">HTML</p>
+          <progress class="percentage" value="90" max="100">90%</progress>
+        </div>
+        <div class="outer">
+          <div class="img6"></div>
+          <p class="text">CSS</p>
+          <progress class="percentage" value="90" max="100">90%</progress>
+        </div>
+        <div class="outer">
+          <div class="img7"></div>
+          <p class="text">FIGMA</p>
+          <progress class="percentage" value="90" max="100"></progress>
+        </div>
+      </div>
       <div id="get-in-touch">
         <div id="form-container">
-          <h2>Get in Touch</h2>
-          <p>Reach out with any questions or inquiries.</p>
+          <h2 class="gradient-text">Get in Touch</h2>
+          <p class="text">Reach out with any questions or inquiries.</p>
           <form
             action="https://formspree.io/f/mzzebvjj"
             method="POST"
             id="get-in-touch-form"
           >
-            <label>
+            <label class="gradient-text">
               Email:
-              <input type="email" name="email" /><br />
+              <input type="email" name="email" class="text"/><br />
             </label>
-            <label id="message-label">
+            <label id="message-label" class="gradient-text">
               message:
-              <textarea name="message"></textarea><br />
+              <textarea name="message" class="text"></textarea><br />
             </label>
-            <button type="submit">Send</button>
+            <button type="submit" class="gradient-text">Send</button>
           </form>
           <div id="status" class="status"></div>
         </div>
         <div id="contact-through">
-          <h3>Let’s Collaborate and workd together</h3>
-          <label for="email">Email</label>
-          <p id="email">aschalewdere2@gmail.com</p>
-          <label for="phone">Contact</label>
-          <p id="phone">09-79-80-80-15</p>
+          <h3 class="gradient-text">Let’s Collaborate and workd together</h3>
+          <label for="email" class="gradient-text">Email :</label>
+          <p id="email" class="text">aschalewdere2@gmail.com</p>
+          <label for="phone" class="gradient-text">Contact :</label>
+          <p id="phone" class="text" >09-79-80-80-15</p>
         </div>
       </div>
       <footer class="footer">
-        <p>
+        <p class="gradient-text">
           Contact:
-          <a href="mailto:your.email@example.com">your.email@example.com</a>
+          <a href="mailto:your.email@example.com" class="gradient-text">your.email@example.com</a>
         </p>
-        <p>Phone: 09-79-80-80-15</p>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p class="gradient-text">Phone: 09-79-80-80-15</p>
+        <p >&copy; 2025 Your Name. All rights reserved.</p>
       </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
