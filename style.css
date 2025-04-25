@@ -197,14 +197,23 @@ button:hover {
   color: transparent;
 }
 #about-me {
-  background-image: url(Images/about1.png);
+  background-image: url(Images/2.png);
   background-size: cover;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   width: 80%;
   height: auto;
   margin: auto;
   padding: 30px;
-  line-height: 35px;
+  padding-bottom: 50px;
+  line-height: 36px;
+}
+#about-me p{
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 #about-me button {
@@ -239,7 +248,7 @@ button:hover {
   position: relative;
   padding: 10px 30px 10px 32px; /* Simplified padding */
   gap: 10px;
-  background-image: url(Images/about1.png);
+  background-image: url(Images/about000.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
