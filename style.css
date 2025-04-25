@@ -42,24 +42,34 @@
   display: inline-block;
 }
 #cv {
+  outline: none;
   font-style: italic;
   font-weight: bolder;
   display: block;
+  border-radius: 10px;
   text-decoration: none;
   margin-top: 80px;
   margin-bottom: 25px;
-  width: fit-content;
+  width: 25%;
+  padding: 10px;
   height: fit-content;
-  transition: color 0.2s ease-out 0.2s;
-  padding: 3px;
+  transition: transform 0.2s ease-out 0.2s;
   font-size: 30px;
-  background: linear-gradient(to bottom, transparent 93%, rgb(212, 87, 41) 99%);
+  background: linear-gradient(
+    to bottom,
+    rgb(240, 97, 8) 25%,
+    orangered 55%,
+    rgb(211, 59, 3) 77%,
+    rgb(206, 73, 11) 95%,
+    white
+  );
 }
 #cv:focus {
-  transform: scale(1.03);
+  color: rgb(198, 188, 170);
 }
 #cv:hover {
-  color: orangered;
+  transform: scaleX(1.1);
+
 }
 
 #get-me {
@@ -187,7 +197,6 @@ button:hover {
   color: transparent;
 }
 #about-me {
-  border: 1px white solid;
   background-image: url(Images/about1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -197,14 +206,27 @@ button:hover {
   padding: 30px;
   line-height: 35px;
 }
+
 #about-me button {
-  border: 1px white solid;
-  background: wheat;
-  color: orangered;
+  background: linear-gradient(
+    to bottom,
+    rgb(240, 97, 8) 25%,
+    orangered 55%,
+    rgb(211, 59, 3) 77%,
+    rgb(206, 73, 11) 95%,
+    white
+  );
+  color: rgb(240, 214, 166);
   display: block;
   border-radius: 20px;
-  width: 60%;
+  width: 45%;
+  padding: 0px;
   margin: auto;
+  transition: transform 0.3s ease-in 0.2s;
+}
+
+#about-me button:hover {
+  transform: scaleX(1.1);
 }
 
 #project-highlight {
@@ -217,7 +239,7 @@ button:hover {
   position: relative;
   padding: 10px 30px 10px 32px; /* Simplified padding */
   gap: 10px;
-  background-image:url(Images/about1.png) ;
+  background-image: url(Images/about1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -226,7 +248,7 @@ button:hover {
 }
 
 #project-highlight #description-container {
-  background-image:transparent;
+  background-image: transparent;
   width: 50%;
   height: fit-content;
   border: 1px solid black;
@@ -241,19 +263,30 @@ button:hover {
   animation: fadeIn 0.5s ease forwards; /* Fade-in animation */
 }
 
-#description-container a {
-  text-decoration: none;
-  width: 50%;
-  display: inline-block;
-  border: 1px solid white;
+#description-container div {
+  width: 60%;
   height: auto;
   padding: 10px;
-  font-size: 40px;
-  margin: 10px;
+  margin: auto;
+  background: linear-gradient(
+    to bottom,
+    rgb(240, 97, 8) 25%,
+    orangered 55%,
+    rgb(211, 59, 3) 77%,
+    rgb(206, 73, 11) 95%,
+    white
+  );  border-radius: 10px;
   transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
 }
 
-#description-container a:hover {
+#description-container a {
+  text-decoration: none;
+  color: wheat;
+  width: 100%;
+  font-size: 40px;
+}
+
+#description-container div:hover {
   transform: scale(1.05); /* Slight scale up */
 }
 
@@ -269,6 +302,8 @@ button:hover {
 
 #project-highlight #left-btn,
 #project-highlight #right-btn {
+  background-color: wheat;
+  border-radius: 10px;
   width: 70px;
   height: 70px;
   background-position: center;
@@ -328,9 +363,9 @@ button:hover {
   margin-bottom: 0px;
   margin-top: 0px;
   display: block;
-  border: 1px black solid;
+  font-style: italic;
   width: 100%;
-  font-size: 50px;
+  font-size: 55px;
 }
 
 .outer {
