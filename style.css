@@ -207,17 +207,7 @@ button:hover {
   color: transparent;
 }
 
-.cc{
-  color: linear-gradient(
-    to bottom,
-    yellow 0%,
-    rgb(240, 97, 8) 1%,
-    orangered 10%,
-    rgb(227, 93, 44) 60%,
-    rgb(206, 73, 11) 87%,
-    wheat
-  );
-}
+
 #about-me {
   background-image: url(Images/3.jpg);
   background-size: cover;
@@ -251,7 +241,10 @@ button:hover {
     wheat
   );
   width: 33%;
-  padding: 0px;
+  font-size: 27px;
+  height: auto;
+  border: 0px;
+  padding: 7px;
   margin: auto;
   margin-bottom: 30px;
   margin-top: 55px;
