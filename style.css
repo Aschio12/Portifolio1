@@ -1,3 +1,7 @@
+body{
+  background:black;
+  padding: 0px;
+}
 #main-container {
   margin: 0px;
 }
@@ -61,7 +65,7 @@
     orangered 55%,
     rgb(211, 59, 3) 77%,
     rgb(206, 73, 11) 95%,
-    white
+    wheat
   );
 }
 #cv:focus {
@@ -70,6 +74,10 @@
 #cv:hover {
   transform: scaleX(1.1);
 
+}
+#get-me img{
+  width: 4.5vw;
+  height: 4.5vw;
 }
 
 #get-me {
@@ -80,46 +88,47 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 35px;
 }
 #get-me a {
+  display: block;
+  height: auto;
+  width: auto;
   text-decoration: none;
-  transition: transform 0.16s ease-out 0.2s;
+  transition: transform 0.3s ease-out 0.09s;
 }
 
 #get-me a:hover {
   transform: scale(1.1);
 }
-#get-me div {
-  width: fit-content;
-  height: fit-content;
-}
+
 
 .dropdown-menu {
   position: fixed; /* Keeps it visible while scrolling */
   top: 15px; /* Adjust as needed */
-  right: 30px;
-  width: auto;
-  height: auto;
+  right: 40px;
+  width:8vw;
+  height: fit-content;
   padding: 5px;
   z-index: 1000; /* Ensure it's above other content */
-  background-color: transparent;
   border-radius: 5px;
 }
 
 .dropdown {
   display: none;
   position: absolute;
-  background-color: black; /* Ensure visibility */
+  background-color:rgb(74, 71, 71);
   padding: 10px;
-  gap: 7px;
+  gap: 10px;
   text-align: center;
   border-radius: 5px;
-  min-width: 120px;
+  width: 100%;
+  margin-right: 30px;
 }
 
 .dropdown-menu a {
-  width: 100px;
+  color:rgba(255, 207, 119, 0.986);
+  width: 100%;
   text-decoration: none;
   height: auto;
   display: block;
@@ -138,9 +147,10 @@
   display: block;
 }
 
-img {
-  width: 70px;
-  height: 70px;
+.dropdown-menu img {
+  margin-left: 30px;
+  width: 50px;
+  height: 50px;
 }
 
 /*fonts*/
@@ -168,10 +178,10 @@ h2 {
   margin: auto;
   margin-top: 40%;
 }
-button {
+.dropdown-menu button {
+  background-color: black;
   width: 70px;
   height: 70px;
-  margin-left: 15px;
   border: none;
   cursor: pointer;
   font-size: 30px;
@@ -196,8 +206,20 @@ button:hover {
   background-clip: text;
   color: transparent;
 }
+
+.cc{
+  color: linear-gradient(
+    to bottom,
+    yellow 0%,
+    rgb(240, 97, 8) 1%,
+    orangered 10%,
+    rgb(227, 93, 44) 60%,
+    rgb(206, 73, 11) 87%,
+    wheat
+  );
+}
 #about-me {
-  background-image: url(Images/2.png);
+  background-image: url(Images/3.jpg);
   background-size: cover;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -205,32 +227,34 @@ button:hover {
   height: auto;
   margin: auto;
   padding: 30px;
-  padding-bottom: 50px;
-  line-height: 36px;
+  padding-bottom: 30px;
+  line-height: 37px;
 }
 #about-me p{
+  margin: auto;
   display: block;
-  width: 100%;
+  width: 101%;
   height: auto;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 #about-me button {
+  color: wheat;
+  display: block;
+  border-radius: 20px;
   background: linear-gradient(
     to bottom,
     rgb(240, 97, 8) 25%,
     orangered 55%,
     rgb(211, 59, 3) 77%,
     rgb(206, 73, 11) 95%,
-    white
+    wheat
   );
-  color: rgb(240, 214, 166);
-  display: block;
-  border-radius: 20px;
-  width: 45%;
+  width: 33%;
   padding: 0px;
   margin: auto;
+  margin-bottom: 30px;
+  margin-top: 55px;
   transition: transform 0.3s ease-in 0.2s;
 }
 
@@ -241,14 +265,13 @@ button:hover {
 #project-highlight {
   width: 80%;
   height: auto;
-  border: 1px solid black;
   margin: auto;
   display: flex;
   align-items: center;
   position: relative;
-  padding: 10px 30px 10px 32px; /* Simplified padding */
+  padding: 0px 0px 0px 32px; /* Simplified padding */
   gap: 10px;
-  background-image: url(Images/about000.png);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(198, 131, 6, 0.24)), url('Images/about2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -283,7 +306,7 @@ button:hover {
     orangered 55%,
     rgb(211, 59, 3) 77%,
     rgb(206, 73, 11) 95%,
-    white
+    wheat
   );  border-radius: 10px;
   transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
 }
@@ -299,9 +322,10 @@ button:hover {
   transform: scale(1.05); /* Slight scale up */
 }
 
+
 #project-highlight #project-image {
-  width: 50%;
-  height: 70vh;
+  width: 60%;
+  height: 80vh;
   border: 1px solid black;
   background-size: cover;
   background-position: center;
@@ -355,31 +379,46 @@ button:hover {
 }
 
 #skills {
+  background-image:url("./Images/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   width: 80%; /* Full width of the container */
-  height: 160vh; /* Adjust as needed */
+  height: auto;
   margin: auto;
-  padding: 30px;
-  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   gap: 50px;
-  border: 1px black solid;
+}
+#skills #h2{
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+  padding: 16px;
 }
 
 #skills h2 {
-  margin-bottom: 0px;
-  margin-top: 0px;
+  border-radius: 10px;
+  margin: auto;
   display: block;
   font-style: italic;
-  width: 100%;
+  width: 60%;
   font-size: 55px;
 }
 
 .outer {
   /* Stack children vertically */
   animation: rotate 3s infinite; /* Apply rotation animation */
+  transition: transform 0.2s ease-out 0.2s;
+}
+.outer:hover{
+  transform:scale(1.1)
 }
 
 @keyframes rotate {
@@ -400,7 +439,7 @@ button:hover {
   text-align: center; /* Center text */
 }
 
-#skills div {
+#skills .outer div {
   border-radius: 30px;
   width: 200px; /* Set width of each div */
   height: 200px; /* Set height of each div */
@@ -435,53 +474,69 @@ button:hover {
 .img7 {
   background-image: url("Images/figma.webp");
 }
+.img8 {
+  background-image: url("Images/c++.jfif");
+}
 
 #get-in-touch {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(245, 222, 179, 0.24)), url('Images/about2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 80%;
   height: 70vh;
   margin: auto;
   padding: 30px;
-  border: 1px black solid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 #get-in-touch h2 {
-  margin-bottom: 20px;
+  width: 80%;
+  margin-bottom: 10px;
 }
 
 #get-in-touch p {
-  margin-bottom: 30px;
+  width: 80%;
 }
-#get-in-touch label {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
+
 #get-in-touch button {
-  width: auto;
+  margin-left:4px;
+  background-color: orangered;
+  text-align: center;
+  width: 40%;
   height: auto;
-  padding: 0px;
-  margin-left: 162px;
+  padding: 10px;
   font-size: 28px;
-  text-align: left;
   border-radius: 5px;
   margin-top: 5px;
+  color: transform 0.1s ease-out 0.1s;
+}
+#get-in-touch button:hover{
+  color: grey;
 }
 #get-in-touch input {
-  width: 50%;
-  font-size: 24px;
+  color: black;
+  padding: 9px;
+  border-radius: 7px;
+  border: 1px white solid;
+  width: 75%;
+  font-size: 19px;
   margin-bottom: 10px;
-  margin-left: 70px;
-  border: 1px orangered solid;
 }
 #get-in-touch textarea {
-  border: 1px orangered solid;
-  width: 50%;
+  color: black;
+  border: 1px white solid;
+  border-radius: 7px;
+  padding: 9px;
+  width: 75%;
   min-height: 90px;
-  padding: 5px;
-  font-size: 24px;
-  float: right;
-  margin-right: 125px;
+  font-size: 19px;
+  margin-bottom: 4px;
+  
 }
 #get-in-touch textarea:focus {
   outline: none;
@@ -492,13 +547,11 @@ button:hover {
 #form-container {
   width: 60%;
   height: auto;
-  border: 1px black solid;
 }
 
 #contact-through {
   padding-top: 20px;
   width: 40%;
-  border: 1px black solid;
   height: auto;
 }
 #message-label {
@@ -515,7 +568,5 @@ button:hover {
   width: 80%;
   padding: 30px;
   margin: auto;
-  border: 1px black solid;
-  color: wheat;
-  background-color: #333;
+  background:linear-gradient(to top,rgb(65, 53, 27),rgb(110, 107, 107));
 }
