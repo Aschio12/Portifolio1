@@ -1,4 +1,38 @@
 $(document).ready(function () {
+    $('#get-in-touch-form').submit(function(e) {
+        e.preventDefault(); // Prevent the default form submission
+        
+        // Show loading state
+        $('#status').html('<p class="text">Sending message...</p>');
+        
+        // Collect form data
+        var formData = $(this).serialize();
+        
+        // Send form data via AJAX
+        $.ajax({
+            url: 'process_form.php',
+            type: 'POST',
+            data: formData,
+            dataType: 'json',
+            success: function(response) {
+                if (response.status === 'success') {
+                    // Show success message
+                    $('#status').html('<p class="gradient-text">' + response.message + '</p>');
+                    // Clear the form
+                    $('#get-in-touch-form')[0].reset();
+                } else {
+                    // Show error message
+                    $('#status').html('<p style="color: red;">' + response.message + '</p>');
+                }
+            },
+            error: function() {
+                // Show generic error message
+                $('#status').html('<p style="color: red;">Something went wrong. Please try again later.</p>');
+            }
+        });
+    });
+
+
     let currentIndex = 0;
     const projects = [
         { address: "./Images/p1.jpg", description: "This is the description of project 1" },
