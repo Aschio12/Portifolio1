@@ -32,19 +32,33 @@ body{
   background-repeat: no-repeat;
 }
 
+#logo-container {
+  display: flex;
+  align-items: center; /* Vertically center the text with the logo */
+}
 #logo {
-  margin-right: 5px;
   display: inline-block;
-  border: 1px black solid;
   padding: 0px;
-  width: fit-content;
-  height: fit-content;
-  left: 0px;
-  top: 10px;
+  width: 60px;
+  height: 40px;
+  background-image: url(Images/logo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
+
 #logo-name p {
-  display: inline-block;
+  color: wheat;
+  font-weight: bolder;
+  height: 40px;
+  margin: 0; /* Remove default paragraph margin */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
 #cv {
   outline: none;
   font-style: italic;
@@ -126,6 +140,7 @@ body{
   margin-right: 30px;
 }
 
+
 .dropdown-menu a {
   color:rgba(255, 207, 119, 0.986);
   width: 100%;
@@ -179,9 +194,9 @@ h2 {
   margin-top: 40%;
 }
 .dropdown-menu button {
-  background-color: black;
-  width: 70px;
-  height: 70px;
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
   border: none;
   cursor: pointer;
   font-size: 30px;
