@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <div id="main-container">
@@ -15,7 +16,7 @@
       </div>
       <div id="hero-secition">
         <div id="logo-container">
-          <div id="logo" style="background-image: url(Images/logo.png);"></div>
+          <div id="logo" style="background-image: url(Images/logo.png)"></div>
           <span id="logo-name"><p>Aschalew</p></span>
         </div>
         <div class="dropdown-menu">
@@ -71,7 +72,7 @@
           and performance, I strive to grow with every project and push the
           boundaries of what I can create.
         </p>
-        <button class="gradient-text" ><b>MORE</b></button>
+        <button class="gradient-text"><b>MORE</b></button>
       </div>
       <div id="project-highlight">
         <button id="left-btn"></button>
@@ -132,15 +133,17 @@
         <div id="form-container">
           <h2 class="gradient-text">Get in Touch</h2>
           <p class="text">Reach out with any questions or inquiries.</p>
-          <form
-            action="https://formspree.io/f/mzzebvjj"
-            method="POST"
-            id="get-in-touch-form"
-          >
-            <input type="email" name="email" placeholder="email" /><br />
+          <form id="get-in-touch-form">
+            <input
+              type="email"
+              name="email"
+              placeholder="email"
+              required
+            /><br />
             <textarea
               name="message"
               placeholder="write your message here.."
+              required
             ></textarea
             ><br />
             <button type="submit" class="text">Send</button>
@@ -148,7 +151,7 @@
           <div id="status" class="status"></div>
         </div>
         <div id="contact-through">
-          <h3 class="gradient-text">Let’s Collaborate and workd together</h3>
+          <h3 class="gradient-text">Let's Collaborate and work together</h3>
           <label for="email" class="gradient-text">Email :</label>
           <p id="email" class="text">aschalewdere2@gmail.com</p>
           <label for="phone" class="gradient-text">Contact :</label>

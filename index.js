@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // Form submission handler
     $('#get-in-touch-form').submit(function(e) {
         e.preventDefault(); // Prevent the default form submission
         
@@ -10,7 +11,7 @@ $(document).ready(function () {
         
         // Send form data via AJAX
         $.ajax({
-            url: 'process_form.php',
+            url: 'process.php', // Make sure this path is correct
             type: 'POST',
             data: formData,
             dataType: 'json',
@@ -25,14 +26,28 @@ $(document).ready(function () {
                     $('#status').html('<p style="color: red;">' + response.message + '</p>');
                 }
             },
-            error: function() {
-                // Show generic error message
-                $('#status').html('<p style="color: red;">Something went wrong. Please try again later.</p>');
+            error: function(xhr, status, error) {
+                // More detailed error handling
+                console.error('AJAX Error:', status, error);
+                console.log('Response:', xhr.responseText);
+                
+                try {
+                    // Try to parse the response as JSON
+                    var jsonResponse = JSON.parse(xhr.responseText);
+                    $('#status').html('<p style="color: red;">' + jsonResponse.message + '</p>');
+                } catch (e) {
+                    // If not JSON, show the raw response if it's not too long
+                    if (xhr.responseText && xhr.responseText.length < 200) {
+                        $('#status').html('<p style="color: red;">Error: ' + xhr.responseText + '</p>');
+                    } else {
+                        $('#status').html('<p style="color: red;">Something went wrong. Please try again later.</p>');
+                    }
+                }
             }
         });
     });
 
-
+    // Project carousel functionality
     let currentIndex = 0;
     const projects = [
         { address: "./Images/p1.jpg", description: "This is the description of project 1" },
