@@ -16,9 +16,10 @@ body{
   align-items: center;
 }
 
-#first-impresssion h1 {
+#first-impresssion #h1 {
   display: inline-block;
   width: 70%;
+  font-size: 56px;
 }
 
 #hero-secition {
@@ -170,7 +171,7 @@ body{
 
 /*fonts*/
 h1 {
-  font-size: 56px;
+  font-size: 52px;
   text-align: center;
 }
 p {
@@ -577,4 +578,326 @@ button:hover {
   padding: 30px;
   margin: auto;
   background:linear-gradient(to top,rgb(65, 53, 27),rgb(110, 107, 107));
+}
+
+
+
+/* Tablet (min-width: 600px and max-width: 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+  #first-impresssion #h1{
+    width: 80%;
+  }
+  h1{
+    font-size: 46px;
+  }
+  
+  /* Added responsive styles for tablet */
+  #hero-secition {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  #about-me {
+    width: 90%;
+    padding: 20px;
+    line-height: 30px;
+  }
+  
+  #about-me p {
+    font-size: 20px;
+  }
+  
+  #about-me button {
+    width: 45%;
+  }
+  
+  #cv {
+    width: 40%;
+    font-size: 24px;
+  }
+  
+  #project-highlight {
+    width: 90%;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  #project-highlight #project-image {
+    width: 90%;
+    height: 50vh;
+  }
+  
+  #project-highlight #description-container {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  #skills {
+    width: 90%;
+    padding: 20px;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  #get-in-touch {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  
+  #form-container, #contact-through {
+    width: 100%;
+  }
+  
+  #get-in-touch input, #get-in-touch textarea {
+    width: 90%;
+  }
+  
+  .footer {
+    width: 90%;
+  }
+}
+
+/* Mobile (max-width: 599px) */
+@media (max-width: 599px) {
+
+  h1{
+    font-size: 24px;
+  }
+  
+  /* Added responsive styles for mobile */
+  #first-impresssion {
+    width: 90%;
+    padding: 15px;
+    height: auto;
+  }
+  
+  #first-impresssion #h1 {
+    width: 100%;
+    font-size: 36px;
+  }
+  
+  #hero-secition {
+    width: 90%;
+    padding: 15px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  h3 {
+    font-size: 26px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  #cv {
+    width: 60%;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  
+  #get-me {
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #get-me img {
+    width: 8vw;
+    height: 8vw;
+  }
+  
+  #about-me {
+    width: 90%;
+    padding: 15px;
+    line-height: 24px;
+  }
+  
+  #about-me p {
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  #about-me button {
+    width: 60%;
+    font-size: 20px;
+  }
+  
+  #project-highlight {
+    width: 90%;
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  #project-highlight #project-image {
+    width: 95%;
+    height: 40vh;
+  }
+  
+  #project-highlight #description-container {
+    width: 95%;
+    margin-bottom: 15px;
+  }
+  
+  #project-highlight #left-btn,
+  #project-highlight #right-btn {
+    width: 40px;
+    height: 40px;
+    transform: translateY(-50%);
+  }
+  
+  #skills {
+    width: 90%;
+    padding: 15px;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  #skills #h2 {
+    padding: 5px;
+  }
+  
+  #skills h2 {
+    width: 90%;
+    font-size: 32px;
+  }
+  
+  #skills .outer div {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .percentage {
+    height: 20px;
+  }
+  
+  #get-in-touch {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+  
+  #form-container, #contact-through {
+    width: 100%;
+  }
+  
+  #get-in-touch h2 {
+    font-size: 28px;
+  }
+  
+  #get-in-touch input, #get-in-touch textarea {
+    width: 95%;
+  }
+  
+  #get-in-touch button {
+    width: 50%;
+    font-size: 20px;
+  }
+  
+  #contact-through label {
+    font-size: 22px;
+  }
+  
+  .footer {
+    width: 90%;
+    padding: 15px;
+  }
+  
+  /* Dropdown menu adjustments */
+  .dropdown-menu {
+    top: 10px;
+    right: 20px;
+    width: 12vw;
+  }
+  
+  .dropdown-menu img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .dropdown-menu a {
+    font-size: 16px;
+  }
+}
+
+/* Small mobile devices (max-width: 420px) */
+@media (max-width: 420px) {
+  h1 {
+    font-size: 20px;
+  }
+  
+  #first-impresssion {
+    padding: 10px;
+  }
+  
+  #hero-secition {
+    padding: 10px;
+  }
+  
+  #cv {
+    width: 70%;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  #get-me img {
+    width: 10vw;
+    height: 10vw;
+  }
+  
+  #about-me {
+    padding: 10px;
+    line-height: 20px;
+  }
+  
+  #skills .outer div {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #get-in-touch button {
+    width: 60%;
+    font-size: 18px;
+  }
+  
+  #contact-through h3 {
+    font-size: 22px;
+  }
+  
+  #contact-through label {
+    font-size: 18px;
+  }
+  
+  /* Fix for the dropdown menu */
+  .dropdown-menu {
+    width: 15vw;
+  }
+  
+  .dropdown {
+    width: 120px;
+    right: 0;
+  }
+}
+
+/* Landscape orientation fix for mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  #first-impresssion {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  #project-highlight #project-image {
+    height: 60vh;
+  }
+  
+  #get-in-touch {
+    height: auto;
+    min-height: 100vh;
+  }
 }
